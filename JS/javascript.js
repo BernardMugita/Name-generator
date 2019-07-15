@@ -24,3 +24,20 @@ function calculate(form){
        alert("You can't be that old!")
    }
 }
+if (val2==1){
+    val2x=13;
+    val3=val3-1;
+}
+if (val2==2){
+    val2x=14;
+    val3=val3-1;
+}
+var val4=parseInt(((val2x+1)*3)/5,10)
+var val5=parseInt(val3/4,10)
+var val6=parseInt(val3/100,10)
+var val7=parseInt(val3/400,10)
+var val8=val1+(val2x*2)+val4+val3+val5-val6+val7+2
+var val9=parseInt(val8/7,10)
+var val0=val8-(val9*7)
+form.result1.value=months[val2]+""+form.day.value+","+form.year.value
+form.result2.value=days[val0]
