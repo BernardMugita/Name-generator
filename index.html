@@ -5,7 +5,7 @@
             <link href="CSS/styles.css" rel="stylesheet">
             <title>NAME GENERATOR</title>
             <link rel = "icon" type = "image/png" href = "flag.png">
-        
+            <script src="JS/javascript.js"></script>
         </head>
 
         <body>
@@ -17,7 +17,6 @@
                 
                         <ul>
                             <li class="active"><a href="#">Home</a></li>
-                            <li><a href="About.html">About</a></li>
                             <li><a href="Manual.html">Manual</a></li>
                             
                         </ul>
@@ -29,23 +28,21 @@
 
                     <div class="body">
 
-                        <form>
-                            <label>Date of Birth</label>
-                            <input type="date"><br>
-                            
-                            <label>Gender</label>
-                            <div class="select">
-                                <select name="GENDER" id="GENDER">
-                                    <option value="Male">Male</option>
-                                    <option value="Female">Female</option>
-                                    <option value="Other">Other</option>
-                                </select>                      
-                            </div>
-
-                            <label>Generated Name</label>
-                            <input type="text" name="Name" placeholder="Your name will appear here">
-                            <button id="btn-GENERATE">GENERATE</button>
-                        </form>
+                    <form>
+                            <h2>Enter Your Date Of Birth: </h2>
+                                <p>Month: <input type="text" name="month" size="2"></p>
+                                <p>Day:  <input type="text" name="day" size="2"></p>
+                                <p>Year: <input type="text" name="year" size="4"></p>
+                                <h4>Enter Your Gender: </h4>
+                                <div class="radio-buttons">
+                                    <input type="radio" name="gender" value="male" id="maleRadio" />Male
+                                    <input type="radio" name="gender" value="female" id="femaleRadio"/>Female
+                                </div>
+                                 <p> <input type="button" value="Submit" onclick="calculate(form)"></p>
+                                 <p> Date of Birth: <input type="text" name="result1" size="18"></p>
+                                 <p> Day of the Week: <input type="text" name="result2" size="18"></p>
+                                 <p> Your Akan Name: <textarea name="result3" rows="2" cols="50"></textarea></p>
+                    </form>
 
 
 
@@ -58,7 +55,7 @@
             </div>
             
         </body>
-        <script src="JS/javascript.js"></script>
+        
             
                 
     </html>
