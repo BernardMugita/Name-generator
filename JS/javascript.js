@@ -71,3 +71,8 @@ if (document.getElementById('maleRadio').checked && days[val0] === 'Monday') {
 } else if (document.getElementById('femaleRadio').checked  && days[val0] === 'Sunday') {
     form.result3.value = 'Your Akan name is Akosua';
 }
+else {
+    alert('Error!! There Are Empty Fields');
+    document.getElementById('myForm');
+ }
+ 
