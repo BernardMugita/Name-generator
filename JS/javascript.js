@@ -41,3 +41,33 @@ var val9=parseInt(val8/7,10)
 var val0=val8-(val9*7)
 form.result1.value=months[val2]+""+form.day.value+","+form.year.value
 form.result2.value=days[val0]
+
+if (document.getElementById('maleRadio').checked && days[val0] === 'Monday') {
+    form.result3.value = 'Your Akan name is Kwadwo';
+} else if (document.getElementById('femaleRadio').checked  && days[val0] === 'Monday') {
+    form.result3.value = 'Your Akan name is Adwoa';
+} else if (document.getElementById('maleRadio').checked  && days[val0] === 'Tuesday') {
+    form.result3.value = 'Your Akan name is Kwabena';
+} else if (document.getElementById('femaleRadio').checked  && days[val0] === 'Tuesday') {
+    form.result3.value = 'Your Akan name is Abenaa';
+} else if (document.getElementById('maleRadio').checked  && days[val0] === 'Wednesday') {
+    form.result3.value = 'Your Akan name is Kwaku';
+} else if (document.getElementById('femaleRadio').checked  && days[val0] === 'Wednesday') {
+    form.result3.value = 'Your Akan name is Akua';
+} else if (document.getElementById('maleRadio').checked  && days[val0] === 'Thursday') {
+    form.result3.value = 'Your Akan name is Yaw';
+} else if (document.getElementById('femaleRadio').checked  && days[val0] === 'Thursday') {
+    form.result3.value = 'Your Akan name is Yaa';
+} else if (document.getElementById('maleRadio').checked  && days[val0] === 'Friday') {
+    form.result3.value = 'Your Akan  is Kofi';
+} else if (document.getElementById('femaleRadio').checked  && days[val0] === 'Friday') {
+    form.result3.value = 'Your Akan name is Afua';
+} else if (document.getElementById('maleRadio').checked  && days[val0] === 'Saturday') {
+    form.result3.value = 'Your Akan name is Kwame';
+} else if (document.getElementById('femaleRadio').checked  && days[val0] === 'Saturday') {
+    form.result3.value = 'Your Akan name is Ama';
+} else if (document.getElementById('maleRadio').checked  && days[val0] === 'Sunday') {
+    form.result3.value = 'Your Akan name is Kwasi';
+} else if (document.getElementById('femaleRadio').checked  && days[val0] === 'Sunday') {
+    form.result3.value = 'Your Akan name is Akosua';
+}
