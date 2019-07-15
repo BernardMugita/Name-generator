@@ -1,13 +1,10 @@
-var century,year,month,day,gender, days, maleNames, femaleNames;
-days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-maleNames=["Kwasi","Kwado","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
-femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
-
-function workout(){
-   century = document.getElementById("century").value;
-   year = document.getElementById("year").value;
-   month = document.getElementById("month").value;
-   day = document.getElementById("day").value;
-   dayOfTheWeek = (((century/4)-2*century-1)+((5*year/4))+((26*(month+1)/10))+day-2)%7;
-   return(Math.floor(dayOfTheWeek));
-}
+function makeArray(n){
+    this.length=n;
+    var i;
+    for (i=1, i<=n; i++;){
+        this[i]=0;
+    }
+ }
+ var days=["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"];
+ 
+ var months=["undefined","January","February","March","April","May","June","July","August","September","October","November","December"];
